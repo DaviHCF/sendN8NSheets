@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 25%;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333333ec;
+    font-weight: 100;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 100%;
+}
+
+textarea{
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
+
+button {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+#responseMessage {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+@media screen and (max-width: 1500px){
+    .container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .container{
+        width: 80%;
+    }
+}
